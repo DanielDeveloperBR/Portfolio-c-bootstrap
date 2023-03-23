@@ -1,0 +1,10 @@
+.home-img img {
+    max-width: 200px; /* defina o valor de largura máxima que desejar */
+    margin: 0; /* centralize a imagem horizontalmente */
+    width: 400px;
+    height: 400px;
+  }
+  .home{
+    background-color: burlywood;
+  }
+  
