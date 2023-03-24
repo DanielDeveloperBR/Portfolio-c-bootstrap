@@ -465,6 +465,11 @@
   }
   return true;
 }
+document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+    if (!Salvar()) {
+      event.preventDefault(); // cancela o envio do formulário
+    }
+  });
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
