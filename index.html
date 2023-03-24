@@ -447,9 +447,24 @@
     <!-- contact section end -->
     <script>
         function Salvar() {
-            alert("E-mail enviado com sucesso")
-        }
-     </script>
+  var nome = document.getElementsByName('Nome')[0].value;
+  var email = document.getElementsByName('Email')[0].value;
+  var assunto = document.getElementsByName('Assunto')[0].value;
+  var mensagem = document.getElementsByName('Menssagem')[0].value;
+  if (nome === '' || email === '' || assunto === '' || mensagem === '') {
+    alert('Por favor, preencha todos os campos!');
+    return false;
+  }
+
+  // Verificar se o e-mail é válido usando uma expressão regular
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Por favor, insira um endereço de e-mail válido!');
+    return false;
+  }
+  return true;
+}
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
