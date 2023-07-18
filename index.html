@@ -48,7 +48,7 @@
                         <h2 class="fs-4 text-white">Front-end</h2>
                         <p class="mt-4 text-sucess text-light">Olá! Sou Daniel, um entusiasta de Tecnologia da Informação com habilidades em HTML, CSS, JavaScript, PHP e Java. Apesar de não ter experiência profissional formal, estou focado em aprimorar minhas habilidades e construir projetos pessoais para demonstrar meu conhecimento técnico. Este portfólio reflete meu empenho em aprimorar minhas habilidades e mostrar meu potencial como desenvolvedor. Estou animado com a possibilidade de colaborar em projetos desafiadores. Convido você a explorar meu portfólio e conhecer meus projetos pessoais. Estou ansioso para continuar aprendendo e crescendo como desenvolvedor.</p>
                         <a href="#portfolio" class="btn btn-light px-3 mt-3 text-black">Meus Projetos</a>
-                        <a href="Curriculo.docx" class="btn btn-light px-3 mt-3 text-black">Curriculo</a>
+                        <a href="Curriculo.pdf" target="_blank" class="btn btn-light px-3 mt-3 text-black">Curriculo</a>
                     </div>
                 </div>
             </div>
@@ -103,13 +103,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center">
-                            <a href="Curriculo.docx" class="btn px-3 btn-light me-5 text-black">Download CV</a>
-                            <div class="social-links">
-                                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                            <a href="Curriculo.pdf" target="_blank" class="btn px-3 btn-light me-5 text-black">Download CV</a>
                         </div>
                     </div>
                 </div>
@@ -251,7 +245,7 @@
     <!--freelancer available section end-->
     <!-- test item start fim-->
 
-    <!-- contact section start -->
+    <!-- contatos section inicia -->
     <section class="contact py-5 bg-primary" id="contact">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
@@ -296,10 +290,10 @@
                         <form action="https://formsubmit.co/danieldetrabalho1@gmail.com" onsubmit="Salvar()"
                             method="POST">
                             <!--Desabilitar captcha-->
-                            <input type="hidden" name="_captcha" value="false" style="display: none;">
+                            <input type="hidden" name="_captcha" value="true" style="display: none;">
                             <!--Desabilitar captcha-->
                             <!--não ir para outra pagina-->
-                            <input type="hidden" name="_next" value="https://danieldeveloperbr.github.io/MeuPortfolio"
+                            <input type="hidden" name="_next" value="https://danieldeveloperbr.github.io/Portfolio-c-bootstrap/"
                                 style="display: nome;">
                             <!--não ir para outra pagina-->
                             <!--Evitar spawm-->
@@ -307,12 +301,11 @@
                             <!--Evitar spawm-->
                             <div class="row">
                                 <div class="col-lg-6 mb-4">
-                                    <input type="text" name="Nome" placeholder="Seu Nome"
+                                    <input type="text" autocomplete="name" name="Nome" placeholder="Seu Nome"
                                         class="form-control form-control-lg fs-6 border-0 shadow-sm">
                                 </div>
                                 <div class="col-lg-6 mb-4">
-                                    <input type="email" name="Email" placeholder="Seu Email"
-                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    <input type="email" autocomplete="email" name="Email" placeholder="Seu Email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
                                 </div>
                             </div>
                             <div class="row">
@@ -329,8 +322,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <button type="submit" class="btn btn-light px-3 text-black">Enviar
-                                        mensagem</button>
+                                    <button type="submit" class="btn btn-light px-3 text-black">Enviar mensagem</button>
                                 </div>
                             </div>
                         </form>
@@ -339,7 +331,7 @@
             </div>
         </div>
     </section>
-    <!-- contact section end -->
+    <!-- contatos section fim -->
     <script>
         function Salvar() {
             var nome = document.getElementsByName('Nome')[0].value;
